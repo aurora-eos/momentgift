@@ -1,0 +1,29 @@
+{
+  "name": "momentgift",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "tsc -b && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner",
+    "test": "node scripts/check-world.cjs && node scripts/check-immersive.cjs && node scripts/check-experience.cjs",
+    "start": "node scripts/start-local.cjs",
+    "offline": "npm run build && node scripts/package-offline.cjs && node scripts/check-offline.cjs"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.186.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}

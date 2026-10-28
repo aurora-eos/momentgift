@@ -1,0 +1,2 @@
+export type Furniture={id:string;name:string;x:number;y:number;w:number;h:number;text:string};
+export const furniture:Furniture[]=[{id:'shelf',name:'旧书架',x:57,y:70,w:49,h:42,text:'一本反复翻阅的书，夹着熟悉的字迹。'},{id:'drawer',name:'木质抽屉',x:252,y:74,w:42,h:31,text:'抽屉散发着淡淡木香，里面收着几页泛黄信纸。'},{id:'plant',name:'窗边花盆',x:286,y:72,w:23,h:33,text:'新叶舒展着，像一个不急着说出口的祝愿。'},{id:'mail',name:'心意信箱',x:38,y:155,w:20,h:33,text:'一封信正在小锁后面，安静地等你。'}];

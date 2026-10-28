@@ -1,0 +1,2 @@
+const routes=[[[14.7,12.2],[16.5,12.4],[18.1,11.6],[20,11.3],[22,11.7],[24.9,11.9]],[[24.9,11.9],[25.3,9.9],[26.4,8.4],[27,6.8],[26.7,5.4],[24.7,5.4],[23.5,6.8],[21.8,8.2],[19.9,7],[19.5,5.5],[22,4.8]],[[26.4,8.4],[28.5,9.7],[30.2,10.2],[32.2,11.4],[33.5,11.8]]];
+export function pathDistance(x:number,z:number){let d=100;for(const route of routes)for(let i=1;i<route.length;i++){const [ax,az]=route[i-1],[bx,bz]=route[i],dx=bx-ax,dz=bz-az,t=Math.max(0,Math.min(1,((x-ax)*dx+(z-az)*dz)/(dx*dx+dz*dz)));d=Math.min(d,Math.hypot(x-ax-dx*t,z-az-dz*t))}return d}
